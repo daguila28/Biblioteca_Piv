@@ -49,12 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BibliotecaContext.cs" />
+    <Compile Include="Migrations\201610292046024_initialcreate.cs" />
+    <Compile Include="Migrations\201610292046024_initialcreate.Designer.cs">
+      <DependentUpon>201610292046024_initialcreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610292057444_agregarEditorial.cs" />
+    <Compile Include="Migrations\201610292057444_agregarEditorial.Designer.cs">
+      <DependentUpon>201610292057444_agregarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modelos\Editorial.cs" />
+    <Compile Include="Modelos\Libro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610292046024_initialcreate.resx">
+      <DependentUpon>201610292046024_initialcreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610292057444_agregarEditorial.resx">
+      <DependentUpon>201610292057444_agregarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
